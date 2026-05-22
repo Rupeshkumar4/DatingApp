@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")] //localhost:5001/api/members controller spellings should  correct
+    [Route("api/[controller]")] //localhost:5001/api/members ==> controller spellings should  correct
     [ApiController]
     public class MembersController(AppDbContext context) : ControllerBase
     {
