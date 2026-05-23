@@ -1,14 +1,14 @@
 using API.Data;
 using API.entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")] //localhost:5001/api/members ==> controller spellings should  correct
-    [ApiController]
-    public class MembersController(AppDbContext context) : ControllerBase
+    // [Route("api/[controller]")] //localhost:5001/api/members ==> controller spellings should  correct
+    // [ApiController]
+    // public class MembersController(AppDbContext context) : ControllerBase
+    public class MembersController(AppDbContext context) : BaseApiController
     {
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<AppUser>>> GetMembers()
