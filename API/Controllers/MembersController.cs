@@ -1,5 +1,6 @@
 using API.Data;
 using API.entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +18,7 @@ namespace API.Controllers
             return Ok(members);
         }
 
+        [Authorize]
         [HttpGet("{id}")] //localhost:5001/api/members/rup-id
         public async Task<ActionResult<AppUser>> GetMember(string id)
         {
