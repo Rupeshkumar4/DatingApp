@@ -74,5 +74,5 @@ import { NgClass } from "@angular/common";
 
 export class App {
 
-  private router = inject(Router);
+  protected router = inject(Router);
 }

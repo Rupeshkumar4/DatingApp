@@ -6,6 +6,7 @@ using API.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -58,7 +59,8 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Middleware order is IMPORTANT
-app.UseHttpsRedirection();
+app.UseMiddleware<ExceptionMiddleware>();
+// app.UseHttpsRedirection();
 
 app.UseCors("CorsPolicy");
 
