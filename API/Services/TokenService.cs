@@ -1,6 +1,6 @@
 using System.Security.Claims;
 using System.Text;
-using API.entities;
+using API.Entities;
 using API.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;

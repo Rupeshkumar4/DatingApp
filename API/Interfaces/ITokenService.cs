@@ -1,5 +1,5 @@
 using System;
-using API.entities;
+using API.Entities;
 namespace API.Interfaces;
 
 public interface ITokenService

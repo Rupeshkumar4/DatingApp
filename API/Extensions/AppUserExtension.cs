@@ -1,6 +1,6 @@
 using System;
 using API.DTOs;
-using API.entities;
+using API.Entities;
 using API.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 namespace API.Extensions;
