@@ -1,1 +1,7 @@
-{}
+{
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "typescript.tsdk": "./client/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
